@@ -39,9 +39,9 @@ namespace WinInfor
 
         private void HomeTab_Load(object sender, EventArgs e)
         {
+            checkUpdate();
             this.DesignedCapacity.Text = battery.DesignedCapacity;
             LoadDataFrom(new SystemInfor(), battery, new DisplayInfor(this.DesignedCapacity.Text), new WindowsInfor());
-            checkUpdate();
         }
         private void LoadDataFrom(SystemInfor systemInfor, BatteryInfor batteryInfor, DisplayInfor displayInfor, WindowsInfor windowsInfor)
         {
@@ -104,10 +104,11 @@ namespace WinInfor
 
                     if (latestVersion != appVersion)
                     {
-                        DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?", "Update", MessageBoxButtons.YesNo);
+                        DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?", "Update Notification", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
                             Process.Start("https://github.com/phanxuanquang/WinInfor/releases/latest");
+                            Application.Exit();
                         }
                     }
                 }
