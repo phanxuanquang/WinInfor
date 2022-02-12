@@ -1,5 +1,5 @@
 # # WinInfor
-**Summary all important information of your Windows system**
+**Summary some important information of your Windows system**
 
 ![alt text](https://i.ibb.co/rHcKSVP/WinInfor.png)
 ------------
