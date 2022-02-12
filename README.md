@@ -1,7 +1,7 @@
 # # WinInfor
 **Summary some important information of your Windows system**
 
-![alt text](https://i.ibb.co/rHcKSVP/WinInfor.png)
+![alt text](https://i.ibb.co/dDfGd4q/WinInfor.png)
 ------------
 This application can check these information: (Keep updating)
 <details>
