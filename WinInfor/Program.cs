@@ -15,11 +15,12 @@ namespace WinInfor
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static int Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainUI());
+            return 0;
         }
         public static Process p = new Process();
         public static void runCommand_Advanced(string command)

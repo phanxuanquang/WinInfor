@@ -831,9 +831,9 @@
             this.tittle.ForeColor = System.Drawing.Color.White;
             this.tittle.Location = new System.Drawing.Point(19, 6);
             this.tittle.Name = "tittle";
-            this.tittle.Size = new System.Drawing.Size(432, 17);
+            this.tittle.Size = new System.Drawing.Size(436, 17);
             this.tittle.TabIndex = 20;
-            this.tittle.Text = "WinInfor - Check all important information of your Windows system";
+            this.tittle.Text = "WinInfor - Summary important information of your Windows system";
             this.tittle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ElipseForm
