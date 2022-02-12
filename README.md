@@ -1,7 +1,7 @@
 # # WinInfor
 **Summary some important information of your Windows system**
 
-![alt text](https://i.ibb.co/rHcKSVP/WinInfor.png)
+![alt text](https://i.ibb.co/dDfGd4q/WinInfor.png)
 ------------
 This application can check these information: (Keep updating)
 <details>
@@ -10,7 +10,6 @@ This application can check these information: (Keep updating)
 - *Model name*
 - *Operating system full name*
 - *CPU basic information*
-- *iGPU name*
 - *Graphic card full name*
 - *RAM real size (in GB)*
 - *Total hard drives size (in GB)*
