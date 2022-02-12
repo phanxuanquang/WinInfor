@@ -21,7 +21,7 @@ namespace WinInfor
         {
             InitializeComponent();
             this.AutoScaleDimensions = new SizeF(6F, 13F);
-            //ShadowForm.SetShadowForm(this);
+            ShadowForm.SetShadowForm(this);
             this.Icon = Properties.Resources.icon;
         }
         // Anti flicker
