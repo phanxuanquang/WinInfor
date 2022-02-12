@@ -473,7 +473,7 @@
             this.RefreshInformation_Button.HoverState.Parent = this.RefreshInformation_Button;
             this.RefreshInformation_Button.Name = "RefreshInformation_Button";
             this.RefreshInformation_Button.ShadowDecoration.Parent = this.RefreshInformation_Button;
-            this.RefreshInformation_Button.Tag = "Refresh Information";
+            this.RefreshInformation_Button.Tag = "";
             this.RefreshInformation_Button.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             this.RefreshInformation_Button.Click += new System.EventHandler(this.RefreshInformation_Button_Click);
             // 
