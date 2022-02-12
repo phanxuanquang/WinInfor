@@ -5,7 +5,9 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -39,6 +41,7 @@ namespace WinInfor
         {
             this.DesignedCapacity.Text = battery.DesignedCapacity;
             LoadDataFrom(new SystemInfor(), battery, new DisplayInfor(this.DesignedCapacity.Text), new WindowsInfor());
+            checkUpdate();
         }
         private void LoadDataFrom(SystemInfor systemInfor, BatteryInfor batteryInfor, DisplayInfor displayInfor, WindowsInfor windowsInfor)
         {
@@ -83,6 +86,36 @@ namespace WinInfor
 
             this.ComputerName.Text = windowsInfor.ComputerName;
             this.DefenderStatus.Text = windowsInfor.Defender;
+        }
+
+        void checkUpdate()
+        {
+            try
+            {
+                if (File.Exists("appVersion.xml"))
+                {
+                    string appVersion;
+                    using (var reader = new StreamReader("appVersion.xml"))
+                    {
+                        appVersion = reader.ReadLine().Trim();
+                    }
+                    WebClient client = new WebClient();
+                    string latestVersion = client.DownloadString("https://raw.githubusercontent.com/phanxuanquang/WinInfor/master/WinInfor/forUpdate.xml");
+
+                    if (int.Parse(latestVersion) > int.Parse(appVersion))
+                    {
+                        DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?", "Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start("https://github.com/phanxuanquang/WinInfor/releases/latest");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update failed.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         #region Button Events
