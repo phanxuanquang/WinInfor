@@ -85,12 +85,13 @@
             this.label26 = new System.Windows.Forms.Label();
             this.RefreshInformation_Button = new Guna.UI2.WinForms.Guna2GradientButton();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label10 = new System.Windows.Forms.Label();
+            this.tittle = new System.Windows.Forms.Label();
             this.ElipseForm = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Banner = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ExitButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.ShadowForm = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.ExitButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.DragControl_Tittle = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.SystemInformation_Group.SuspendLayout();
             this.BatteryInformation_Group.SuspendLayout();
             this.DisplayInformation_Group.SuspendLayout();
@@ -820,20 +821,20 @@
             this.RefreshInformation_Button.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             this.RefreshInformation_Button.Click += new System.EventHandler(this.RefreshInformation_Button_Click);
             // 
-            // label10
+            // tittle
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(19, 6);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(432, 17);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "WinInfor - Check all important information of your Windows system";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tittle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tittle.AutoSize = true;
+            this.tittle.BackColor = System.Drawing.Color.Transparent;
+            this.tittle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tittle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tittle.ForeColor = System.Drawing.Color.White;
+            this.tittle.Location = new System.Drawing.Point(19, 6);
+            this.tittle.Name = "tittle";
+            this.tittle.Size = new System.Drawing.Size(432, 17);
+            this.tittle.TabIndex = 20;
+            this.tittle.Text = "WinInfor - Check all important information of your Windows system";
+            this.tittle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ElipseForm
             // 
@@ -843,7 +844,7 @@
             // Banner
             // 
             this.Banner.Controls.Add(this.ExitButton);
-            this.Banner.Controls.Add(this.label10);
+            this.Banner.Controls.Add(this.tittle);
             this.Banner.Dock = System.Windows.Forms.DockStyle.Top;
             this.Banner.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(204)))));
             this.Banner.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(206)))));
@@ -852,10 +853,6 @@
             this.Banner.ShadowDecoration.Parent = this.Banner;
             this.Banner.Size = new System.Drawing.Size(851, 28);
             this.Banner.TabIndex = 24;
-            // 
-            // DragControl
-            // 
-            this.DragControl.TargetControl = this.Banner;
             // 
             // ExitButton
             // 
@@ -873,6 +870,14 @@
             this.ExitButton.Size = new System.Drawing.Size(28, 28);
             this.ExitButton.TabIndex = 21;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // DragControl
+            // 
+            this.DragControl.TargetControl = this.Banner;
+            // 
+            // DragControl_Tittle
+            // 
+            this.DragControl_Tittle.TargetControl = this.tittle;
             // 
             // MainUI
             // 
@@ -964,11 +969,12 @@
         private Guna.UI2.WinForms.Guna2GradientButton CheckUpdateButton;
         private System.Windows.Forms.ToolTip toolTip;
         private Guna.UI2.WinForms.Guna2Elipse ElipseForm;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label tittle;
         private Guna.UI2.WinForms.Guna2GradientPanel Banner;
         private Guna.UI2.WinForms.Guna2DragControl DragControl;
         private Guna.UI2.WinForms.Guna2ImageButton ExitButton;
         private Guna.UI2.WinForms.Guna2ShadowForm ShadowForm;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl_Tittle;
     }
 }
 

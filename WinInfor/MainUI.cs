@@ -20,6 +20,7 @@ namespace WinInfor
             ShadowForm.SetShadowForm(this);
             this.Icon = Properties.Resources.icon;
         }
+        // Anti flicker
         protected override CreateParams CreateParams
         {
             get
@@ -80,65 +81,27 @@ namespace WinInfor
             this.DefenderStatus.Text = windowsInfor.Defender;
         }
 
-        private void RefreshInformation_Button_Click(object sender, EventArgs e)
-        {
-            ReLoadDataFrom(new BatteryInfor(), new DisplayInfor(), new WindowsInfor());
-        }
-
+        #region Button Events
         private void CheckUpdateButton_Click(object sender, EventArgs e)
         {
             Program.runCommand_Advanced("explorer ms-settings:windowsupdate");
         }
-        string get_DefenderStatus()
-        {
-            try
-            {
-                Process p = new Process();
-                p.StartInfo.UseShellExecute = false;
-                p.StartInfo.RedirectStandardOutput = true;
-                p.StartInfo.FileName = "CMD.exe";
-                p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                p.StartInfo.CreateNoWindow = true;
-
-                bool isDefenderOn(string[] keyList)
-                {
-                    foreach (string key in keyList)
-                    {
-                        p.StartInfo.Arguments = String.Format("/C PowerShell \"Get-MpComputerStatus | select {0}\"", key);
-                        p.Start();
-                        if (!p.StandardOutput.ReadToEnd().Contains("True"))
-                        {
-                            return false;
-                        }
-                    }
-                    return true;
-                }
-                if (isDefenderOn(new string[] { "AntispywareEnabled", "AntivirusEnabled", "IoavProtectionEnabled", "RealTimeProtectionEnabled", "IsTamperProtected" }))
-                {
-                    return "On";
-                }
-                return "Off";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Cannot identify Windows Defender status.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return "Cannot identify";
-        }
-
         private void Activation_Click(object sender, EventArgs e)
         {
             Program.runCommand_Advanced("explorer ms-settings:activation");
         }
-
+        private void RefreshInformation_Button_Click(object sender, EventArgs e)
+        {
+            ReLoadDataFrom(new BatteryInfor(), new DisplayInfor(), new WindowsInfor());
+        }
+        private void GithubButton_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/phanxuanquang/WinInfor");
+        }
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit(); 
         }
-
-        private void GithubButton_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://google.com");
-        }
+        #endregion
     }
 }

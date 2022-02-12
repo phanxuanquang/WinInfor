@@ -54,8 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BatteryInfor.cs" />
-    <Compile Include="DisplayInfor.cs" />
+    <Compile Include="Models\BatteryInfor.cs" />
+    <Compile Include="Models\DisplayInfor.cs" />
     <Compile Include="MainUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,8 +64,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SystemInfor.cs" />
-    <Compile Include="WindowsInfor.cs" />
+    <Compile Include="Models\SystemInfor.cs" />
+    <Compile Include="Models\WindowsInfor.cs" />
     <EmbeddedResource Include="MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,12 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconBanner.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Exit.png" />
