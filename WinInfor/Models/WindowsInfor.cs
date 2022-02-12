@@ -27,7 +27,7 @@ namespace WinInfor
                 ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_OperatingSystem");
                 foreach (ManagementObject mo in mos.Get())
                 {
-                    if (mo["SerialNumber"].ToString() != "" || mo["SerialNumber"] != null)
+                    if (mo["SerialNumber"].ToString() != "" || mo["SerialNumber"] != null || mo["SerialNumber"].ToString().Contains("XXXXX") == false)
                     {
                         return "Activated";
                     }
