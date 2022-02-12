@@ -100,7 +100,7 @@ namespace WinInfor
                         appVersion = reader.ReadLine().Trim();
                     }
                     WebClient client = new WebClient();
-                    string latestVersion = client.DownloadString("https://raw.githubusercontent.com/phanxuanquang/WinInfor/master/WinInfor/forUpdate.xml");
+                    string latestVersion = client.DownloadString("https://raw.githubusercontent.com/phanxuanquang/WinInfor/master/WinInfor/forUpdate.xml").Trim();
 
                     if (latestVersion != appVersion)
                     {
