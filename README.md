@@ -10,7 +10,6 @@ This application can check these information: (Keep updating)
 - *Model name*
 - *Operating system full name*
 - *CPU basic information*
-- *iGPU name*
 - *Graphic card full name*
 - *RAM real size (in GB)*
 - *Total hard drives size (in GB)*
