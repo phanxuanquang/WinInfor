@@ -108,10 +108,10 @@ namespace WinInfor
             }
             return 0;
         }
-        float get_Scale()
+        double get_Scale()
         {
             var currentDPI = (int)Registry.GetValue("HKEY_CURRENT_USER\\Control Panel\\Desktop", "LogPixels", 96);
-            var scale = (float)currentDPI / 96 * 100;
+            double scale = Math.Round((double)currentDPI / 96 * 100, 0);
             return scale;
         }
         string get_NightLightStatus()
