@@ -102,7 +102,7 @@ namespace WinInfor
                     WebClient client = new WebClient();
                     string latestVersion = client.DownloadString("https://raw.githubusercontent.com/phanxuanquang/WinInfor/master/WinInfor/forUpdate.xml");
 
-                    if (int.Parse(latestVersion) > int.Parse(appVersion))
+                    if (latestVersion != appVersion)
                     {
                         DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?", "Update", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
