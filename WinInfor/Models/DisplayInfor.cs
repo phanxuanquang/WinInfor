@@ -67,7 +67,7 @@ namespace WinInfor
             int RefreshRatecount = 1;
             try
             {
-                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_VideoController");
+                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT CurrentRefreshRate FROM Win32_VideoController");
                 foreach (ManagementObject mo in mos.Get())
                 {
                     if (mo["CurrentRefreshRate"] != null)
@@ -91,14 +91,10 @@ namespace WinInfor
         {
             try
             {
-                var mclass = new ManagementClass("WmiMonitorBrightness")
+                ManagementObjectSearcher mos = new ManagementObjectSearcher(@"\\.\root\wmi", "Select CurrentBrightness From WmiMonitorBrightness");
+                foreach (ManagementObject mo in mos.Get())
                 {
-                    Scope = new ManagementScope(@"\\.\root\wmi")
-                };
-
-                foreach (ManagementObject instance in mclass.GetInstances())
-                {
-                    return (byte)instance["CurrentBrightness"];
+                    return (byte)mo["CurrentBrightness"];
                 }
                 return 0;
             }

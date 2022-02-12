@@ -26,7 +26,7 @@ namespace WinInfor
         {
             try
             {
-                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_ComputerSystem");
+                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT Model FROM Win32_ComputerSystem");
                 foreach (ManagementObject mo in mos.Get())
                 {
                     return mo["Model"].ToString();
@@ -43,7 +43,7 @@ namespace WinInfor
         {
             try
             {
-                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_Processor");
+                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT Name FROM Win32_Processor");
                 foreach (ManagementObject mo in mos.Get())
                 {
                     return mo["Name"].ToString();
@@ -73,7 +73,7 @@ namespace WinInfor
         {
             try
             {
-                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_VideoController");
+                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT Name FROM Win32_VideoController");
                 foreach (ManagementObject mo in mos.Get())
                 {
                     return mo["Name"].ToString();

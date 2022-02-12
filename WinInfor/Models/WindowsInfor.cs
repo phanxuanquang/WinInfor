@@ -74,21 +74,11 @@ namespace WinInfor
                 p.StartInfo.FileName = "CMD.exe";
                 p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                 p.StartInfo.CreateNoWindow = true;
-
-                bool isDefenderOn(string[] keyList)
-                {
-                    foreach (string key in keyList)
-                    {
-                        p.StartInfo.Arguments = String.Format("/C PowerShell \"Get-MpComputerStatus | select {0}\"", key);
-                        p.Start();
-                        if (!p.StandardOutput.ReadToEnd().Contains("True"))
-                        {
-                            return false;
-                        }
-                    }
-                    return true;
-                }
-                if (isDefenderOn(new string[] { "AntispywareEnabled", "AntivirusEnabled", "IoavProtectionEnabled", "RealTimeProtectionEnabled", "IsTamperProtected" }))
+                p.StartInfo.Arguments = "/C PowerShell \"Get-MpComputerStatus | select AntispywareEnabled, AntivirusEnabled, IoavProtectionEnabled, RealTimeProtectionEnabled, IsTamperProtected\"";
+                p.Start();
+                string result = p.StandardOutput.ReadToEnd();
+                string resultFinal = result.Replace("True", "");
+                if (result.Length - resultFinal.Length == 20)
                 {
                     return "On";
                 }

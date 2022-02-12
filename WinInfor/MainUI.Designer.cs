@@ -468,8 +468,8 @@
             this.RefreshInformation_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(206)))));
             this.RefreshInformation_Button.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(206)))));
             this.RefreshInformation_Button.ForeColor = System.Drawing.Color.White;
-            this.RefreshInformation_Button.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
-            this.RefreshInformation_Button.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
+            this.RefreshInformation_Button.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(244)))));
+            this.RefreshInformation_Button.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(244)))));
             this.RefreshInformation_Button.HoverState.Parent = this.RefreshInformation_Button;
             this.RefreshInformation_Button.Name = "RefreshInformation_Button";
             this.RefreshInformation_Button.ShadowDecoration.Parent = this.RefreshInformation_Button;
