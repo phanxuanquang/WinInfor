@@ -12,7 +12,7 @@ namespace WinInfor
 {
     internal class SystemInfor
     {
-        public string SystemModel, OperatingSystem, CPU, GraphicCard, iGPU, RAM, HardDiscSpace;
+        public string SystemModel, OperatingSystem, CPU, GraphicCard, RAM, HardDiscSpace;
         public SystemInfor()
         {
             SystemModel = get_SystemModel();
@@ -21,7 +21,6 @@ namespace WinInfor
             GraphicCard = get_GraphicCard();
             RAM = get_RAM();
             HardDiscSpace = get_HardDiskSpace();
-            iGPU = get_iGPU();
         }
         string get_SystemModel()
         {
@@ -67,31 +66,6 @@ namespace WinInfor
             catch (Exception ex)
             {
                 MessageBox.Show("Operating System information not found.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return "Cannot identify";
-        }
-        string get_iGPU()
-        {
-            int GPUcount = 1;
-            try
-            {
-                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_VideoController");
-                foreach (ManagementObject mo in mos.Get())
-                {
-                    if (mo["Caption"] != null)
-                    {
-                        GPUcount++;
-                    }
-                    if (mo["Caption"] != null && GPUcount > 2)
-                    {
-                        return mo["Caption"].ToString();
-                    }
-                }
-                return "Not available";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Integrated GPU information not found.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return "Cannot identify";
         }

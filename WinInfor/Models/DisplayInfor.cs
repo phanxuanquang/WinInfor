@@ -13,14 +13,22 @@ namespace WinInfor
     internal class DisplayInfor
     {
         public string Resolution, RefreshRate, Brightness, scale, NightLight, HDRforPlayback;
-        public DisplayInfor()
+        public DisplayInfor(string BatteryDesignedCapacity)
         {
             Resolution = get_Resolution();
             RefreshRate = get_RefreshRate();
-            Brightness = get_Brightness().ToString() + "%";
             scale = get_Scale();
             NightLight = get_NightLightStatus();
             HDRforPlayback = get_HDRforPlayback();
+
+            if (BatteryDesignedCapacity != "Cannot identify")
+            {
+                Brightness = get_Brightness().ToString() + "%";
+            }
+            else
+            {
+                Brightness = "100%";
+            }
         }
         string get_Resolution()
         {
@@ -51,7 +59,7 @@ namespace WinInfor
                     }
                     if (mo["CurrentRefreshRate"] != null && RefreshRatecount > 1)
                     {
-                        return (int.Parse(mo["CurrentRefreshRate"].ToString()) + 1).ToString() + "Hz";
+                        return mo["CurrentRefreshRate"].ToString().ToString() + "Hz";
                     }
                 }
                 return "Cannot identify";

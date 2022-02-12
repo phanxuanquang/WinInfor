@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static WinInfor.Program;
@@ -14,6 +16,7 @@ namespace WinInfor
 {
     public partial class MainUI : Form
     {
+        BatteryInfor battery = new BatteryInfor();
         public MainUI()
         {
             InitializeComponent();
@@ -33,19 +36,19 @@ namespace WinInfor
 
         private void HomeTab_Load(object sender, EventArgs e)
         {
-            LoadDataFrom(new SystemInfor(), new BatteryInfor(), new DisplayInfor(), new WindowsInfor());
+            this.DesignedCapacity.Text = battery.DesignedCapacity;
+            LoadDataFrom(new SystemInfor(), new BatteryInfor(), new DisplayInfor(this.DesignedCapacity.Text), new WindowsInfor());
         }
         private void LoadDataFrom(SystemInfor systemInfor, BatteryInfor batteryInfor, DisplayInfor displayInfor, WindowsInfor windowsInfor)
         {
             this.SystemModel.Text = systemInfor.SystemModel;
             this.OperatingSystem.Text = systemInfor.OperatingSystem;
             this.CPU.Text = systemInfor.CPU;
-            this.iGPU.Text = systemInfor.iGPU;
             this.GraphicCard.Text = systemInfor.GraphicCard;
             this.RAM.Text = systemInfor.RAM;
             this.HardDiscSpace.Text = systemInfor.HardDiscSpace;
 
-            this.DesignedCapacity.Text = batteryInfor.DesignedCapacity;
+            //this.DesignedCapacity.Text = batteryInfor.DesignedCapacity;
             this.WearLevel.Text = batteryInfor.WearLevel;
             this.BatteryLifeRemaining.Text = batteryInfor.BatteryLifeRemaining;
             this.PowerStatus.Text = batteryInfor.PowerStatus;
@@ -92,7 +95,7 @@ namespace WinInfor
         }
         private void RefreshInformation_Button_Click(object sender, EventArgs e)
         {
-            ReLoadDataFrom(new BatteryInfor(), new DisplayInfor(), new WindowsInfor());
+            ReLoadDataFrom(new BatteryInfor(), new DisplayInfor(this.DesignedCapacity.Text), new WindowsInfor());
         }
         private void GithubButton_Click(object sender, EventArgs e)
         {

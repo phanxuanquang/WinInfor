@@ -10,15 +10,26 @@ namespace WinInfor
 {
     internal class BatteryInfor
     {
-        public string BatteryLifeRemaining, BatteryLifePercent, PowerStatus, WearLevel, DesignedCapacity, Health;
+        public string BatteryLifeRemaining, BatteryLifePercent, PowerStatus, WearLevel, DesignedCapacity = "Cannot identify", Health;
         public BatteryInfor()
         {
-            BatteryLifeRemaining = get_BatteryLifeRemaining();
-            BatteryLifePercent = get_BatteryLifePercent();
-            PowerStatus = get_PowerStatus();
-            WearLevel = String.Format("About {0}%", get_WearLevel());
             DesignedCapacity = get_DesignedCapacity();
-            Health = get_Health();
+            if(DesignedCapacity == "Cannot identify")
+            {
+                BatteryLifeRemaining = "Unlimited";
+                BatteryLifePercent = "100%";
+                PowerStatus = get_PowerStatus();
+                WearLevel = "0%";
+                Health = "Unknown";
+            }
+            else
+            {
+                BatteryLifeRemaining = get_BatteryLifeRemaining();
+                BatteryLifePercent = get_BatteryLifePercent();
+                PowerStatus = get_PowerStatus();
+                WearLevel = String.Format("About {0}%", get_WearLevel());
+                Health = get_Health();
+            }
         }
         string get_BatteryLifeRemaining()
         {
