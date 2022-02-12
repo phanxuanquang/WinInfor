@@ -20,6 +20,7 @@ namespace WinInfor
         public MainUI()
         {
             InitializeComponent();
+            this.AutoScaleDimensions = new SizeF(6F, 13F);
             ShadowForm.SetShadowForm(this);
             this.Icon = Properties.Resources.icon;
         }

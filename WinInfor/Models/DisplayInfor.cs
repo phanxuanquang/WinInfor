@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Management;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,13 +31,30 @@ namespace WinInfor
                 Brightness = "100%";
             }
         }
+        private enum ProcessDPIAwareness
+        {
+            ProcessDPIUnaware = 0,
+            ProcessSystemDPIAware = 1,
+            ProcessPerMonitorDPIAware = 2
+        }
+        [DllImport("shcore.dll")]
+        private static extern int SetProcessDpiAwareness(ProcessDPIAwareness value);
+        private static void SetDpiAwareness()
+        {
+            if (Environment.OSVersion.Version.Major >= 6)
+            {
+                SetProcessDpiAwareness(ProcessDPIAwareness.ProcessPerMonitorDPIAware);
+            }
+        }
+
         string get_Resolution()
         {
             try
             {
+                SetDpiAwareness();
                 var screenHeight = Screen.PrimaryScreen.Bounds.Height;
                 var screenWidth = Screen.PrimaryScreen.Bounds.Width;
-                return String.Format("{0}  x {1}", screenWidth, screenHeight);
+                return String.Format("{0}  x {1}", screenWidth, screenHeight); 
             }
             catch (Exception ex)
             {
