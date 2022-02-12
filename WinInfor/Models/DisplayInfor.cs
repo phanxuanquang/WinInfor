@@ -57,9 +57,9 @@ namespace WinInfor
                     {
                         RefreshRatecount++;
                     }
-                    if (mo["CurrentRefreshRate"] != null && RefreshRatecount > 1)
+                    if (mo["CurrentRefreshRate"] != null && RefreshRatecount > 1 && mo["CurrentRefreshRate"].ToString() != "1")
                     {
-                        return mo["CurrentRefreshRate"].ToString().ToString() + "Hz"; 
+                        return mo["CurrentRefreshRate"].ToString() + "Hz"; 
                     }
                 }
                 return "Cannot identify";
