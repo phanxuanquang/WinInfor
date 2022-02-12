@@ -15,9 +15,9 @@ namespace WinInfor
         public string Resolution, RefreshRate, Brightness, scale, NightLight, HDRforPlayback;
         public DisplayInfor(string BatteryDesignedCapacity)
         {
-            Resolution = get_Resolution();
             RefreshRate = get_RefreshRate();
-            scale = get_Scale();
+            Resolution = get_Resolution();
+            scale = get_Scale() + "%";
             NightLight = get_NightLightStatus();
             HDRforPlayback = get_HDRforPlayback();
 
@@ -34,14 +34,13 @@ namespace WinInfor
         {
             try
             {
-                int screenHeight = Screen.PrimaryScreen.Bounds.Height;
-                int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+                var screenHeight = Screen.PrimaryScreen.Bounds.Height;
+                var screenWidth = Screen.PrimaryScreen.Bounds.Width;
                 return String.Format("{0}  x {1}", screenWidth, screenHeight);
             }
             catch (Exception ex)
             {
-                ;
-                MessageBox.Show("Cannot identify resolution of the monitor.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Cannot detect resolution of the monitor.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return "Cannot identify";
         }
@@ -91,11 +90,11 @@ namespace WinInfor
             }
             return 0;
         }
-        string get_Scale()
+        float get_Scale()
         {
             var currentDPI = (int)Registry.GetValue("HKEY_CURRENT_USER\\Control Panel\\Desktop", "LogPixels", 96);
             var scale = (float)currentDPI / 96 * 100;
-            return scale.ToString() + "%";
+            return scale;
         }
         string get_NightLightStatus()
         {

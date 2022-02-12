@@ -37,7 +37,7 @@ namespace WinInfor
         private void HomeTab_Load(object sender, EventArgs e)
         {
             this.DesignedCapacity.Text = battery.DesignedCapacity;
-            LoadDataFrom(new SystemInfor(), new BatteryInfor(), new DisplayInfor(this.DesignedCapacity.Text), new WindowsInfor());
+            LoadDataFrom(new SystemInfor(), battery, new DisplayInfor(this.DesignedCapacity.Text), new WindowsInfor());
         }
         private void LoadDataFrom(SystemInfor systemInfor, BatteryInfor batteryInfor, DisplayInfor displayInfor, WindowsInfor windowsInfor)
         {
