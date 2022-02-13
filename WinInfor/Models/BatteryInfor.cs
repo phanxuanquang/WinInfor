@@ -133,13 +133,14 @@ namespace WinInfor
         }
         string get_Health()
         {
+            double wearLevel = double.Parse(get_WearLevel());
             try
             {
-                if (double.Parse(WearLevel) <= 15)
+                if (wearLevel <= 15)
                 {
                     return "Excellent";
                 }
-                else if (double.Parse(WearLevel) > 15 && double.Parse(WearLevel) < 40)
+                else if (wearLevel > 15 && wearLevel < 40)
                 {
                     return "Good";
                 }
