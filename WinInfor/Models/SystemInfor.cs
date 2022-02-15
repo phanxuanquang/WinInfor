@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic.Devices;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Management;
@@ -92,7 +93,8 @@ namespace WinInfor
             {
                 ComputerInfo computerInfo = new ComputerInfo();
                 var RAM = (double)(computerInfo.TotalPhysicalMemory as UInt64?);
-                return String.Format("{0} GB", Math.Round(RAM / 1048576000, 2));
+                var availableRAM = (double)(computerInfo.AvailablePhysicalMemory as UInt64?);
+                return String.Format("{0} GB with {1} GB available at present", Math.Round(RAM / 1048576000, 2), Math.Round(availableRAM / 1048576000, 2));
             }
             catch (Exception ex)
             {
@@ -105,14 +107,16 @@ namespace WinInfor
             try
             {
                 double totalSize = 0;
+                double freeSpace = 0;
                 foreach (DriveInfo disc in DriveInfo.GetDrives())
                 {
                     if (disc.DriveType == DriveType.Fixed)
                     {
                         totalSize += disc.TotalSize;
+                        freeSpace += disc.AvailableFreeSpace;
                     }
                 }
-                return String.Format("{0} GB", Math.Round(totalSize / 1048576000, 2));
+                return String.Format("{0} GB with {1} GB available", Math.Round(totalSize / 1048576000, 2), Math.Round(freeSpace / 1048576000, 2));
             }
             catch (Exception ex)
             {

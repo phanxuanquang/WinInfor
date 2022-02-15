@@ -121,9 +121,6 @@
   <data name="SystemInformation_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -136,7 +133,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 163</value>
+    <value>18, 163</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 13</value>
@@ -146,9 +143,6 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Hard Drive Size:</value>
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value>Tổng dung lượng lưu trữ</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -172,7 +166,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 139</value>
+    <value>18, 139</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -205,7 +199,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 115</value>
+    <value>18, 115</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 13</value>
@@ -215,9 +209,6 @@
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Graphic Card: </value>
-  </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value>Card đồ họa </value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -241,7 +232,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 91</value>
+    <value>18, 91</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -251,9 +242,6 @@
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>CPU: </value>
-  </data>
-  <data name="label4.ToolTip" xml:space="preserve">
-    <value>Vi xử lý</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -277,7 +265,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 43</value>
+    <value>18, 43</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 13</value>
@@ -287,9 +275,6 @@
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Model name:</value>
-  </data>
-  <data name="label5.ToolTip" xml:space="preserve">
-    <value>Tên mẫu máy</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -313,7 +298,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 67</value>
+    <value>18, 67</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 13</value>
@@ -323,9 +308,6 @@
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Operating System: </value>
-  </data>
-  <data name="label6.ToolTip" xml:space="preserve">
-    <value>Hệ điều hành</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -349,7 +331,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="HardDiscSpace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 163</value>
+    <value>138, 163</value>
   </data>
   <data name="HardDiscSpace.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
@@ -382,7 +364,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="RAM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 139</value>
+    <value>138, 139</value>
   </data>
   <data name="RAM.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
@@ -415,7 +397,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="GraphicCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 115</value>
+    <value>138, 115</value>
   </data>
   <data name="GraphicCard.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
@@ -425,6 +407,12 @@
   </data>
   <data name="GraphicCard.Text" xml:space="preserve">
     <value>Cannot identify</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>611, 17</value>
+  </metadata>
+  <data name="GraphicCard.ToolTip" xml:space="preserve">
+    <value>Click for more information about your graphic card</value>
   </data>
   <data name="&gt;&gt;GraphicCard.Name" xml:space="preserve">
     <value>GraphicCard</value>
@@ -448,7 +436,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="CPU.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 91</value>
+    <value>138, 91</value>
   </data>
   <data name="CPU.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
@@ -458,6 +446,9 @@
   </data>
   <data name="CPU.Text" xml:space="preserve">
     <value>Cannot identify</value>
+  </data>
+  <data name="CPU.ToolTip" xml:space="preserve">
+    <value>Click for more information about your CPU</value>
   </data>
   <data name="&gt;&gt;CPU.Name" xml:space="preserve">
     <value>CPU</value>
@@ -481,7 +472,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="SystemModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 43</value>
+    <value>138, 43</value>
   </data>
   <data name="SystemModel.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
@@ -491,6 +482,9 @@
   </data>
   <data name="SystemModel.Text" xml:space="preserve">
     <value>Cannot identify</value>
+  </data>
+  <data name="SystemModel.ToolTip" xml:space="preserve">
+    <value>Click for more information about your model line up</value>
   </data>
   <data name="&gt;&gt;SystemModel.Name" xml:space="preserve">
     <value>SystemModel</value>
@@ -514,7 +508,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="OperatingSystem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 67</value>
+    <value>138, 67</value>
   </data>
   <data name="OperatingSystem.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
@@ -524,6 +518,9 @@
   </data>
   <data name="OperatingSystem.Text" xml:space="preserve">
     <value>Cannot identify</value>
+  </data>
+  <data name="OperatingSystem.ToolTip" xml:space="preserve">
+    <value>Click for more information about your operating system</value>
   </data>
   <data name="&gt;&gt;OperatingSystem.Name" xml:space="preserve">
     <value>OperatingSystem</value>
@@ -552,12 +549,6 @@
   <data name="SystemInformation_Group.Text" xml:space="preserve">
     <value>System</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="SystemInformation_Group.ToolTip" xml:space="preserve">
-    <value>Hệ thống</value>
-  </data>
   <data name="&gt;&gt;SystemInformation_Group.Name" xml:space="preserve">
     <value>SystemInformation_Group</value>
   </data>
@@ -572,180 +563,6 @@
   </data>
   <data name="BatteryInformation_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
-  </data>
-  <data name="&gt;&gt;Health.Name" xml:space="preserve">
-    <value>Health</value>
-  </data>
-  <data name="&gt;&gt;Health.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Health.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;Health.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CurrentPercent.Name" xml:space="preserve">
-    <value>CurrentPercent</value>
-  </data>
-  <data name="&gt;&gt;CurrentPercent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CurrentPercent.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;CurrentPercent.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;PowerStatus.Name" xml:space="preserve">
-    <value>PowerStatus</value>
-  </data>
-  <data name="&gt;&gt;PowerStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PowerStatus.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;PowerStatus.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;BatteryLifeRemaining.Name" xml:space="preserve">
-    <value>BatteryLifeRemaining</value>
-  </data>
-  <data name="&gt;&gt;BatteryLifeRemaining.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BatteryLifeRemaining.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;BatteryLifeRemaining.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;DesignedCapacity.Name" xml:space="preserve">
-    <value>DesignedCapacity</value>
-  </data>
-  <data name="&gt;&gt;DesignedCapacity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DesignedCapacity.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;DesignedCapacity.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;WearLevel.Name" xml:space="preserve">
-    <value>WearLevel</value>
-  </data>
-  <data name="&gt;&gt;WearLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WearLevel.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;WearLevel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label0.Name" xml:space="preserve">
-    <value>label0</value>
-  </data>
-  <data name="&gt;&gt;label0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label0.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;label0.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="BatteryInformation_Group.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
-  </data>
-  <data name="BatteryInformation_Group.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 46</value>
-  </data>
-  <data name="BatteryInformation_Group.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 207</value>
-  </data>
-  <data name="BatteryInformation_Group.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="BatteryInformation_Group.Text" xml:space="preserve">
-    <value>Battery</value>
-  </data>
-  <data name="BatteryInformation_Group.ToolTip" xml:space="preserve">
-    <value>Pin </value>
-  </data>
-  <data name="&gt;&gt;BatteryInformation_Group.Name" xml:space="preserve">
-    <value>BatteryInformation_Group</value>
-  </data>
-  <data name="&gt;&gt;BatteryInformation_Group.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BatteryInformation_Group.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BatteryInformation_Group.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="Health.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -966,9 +783,6 @@
   <data name="label7.Text" xml:space="preserve">
     <value>Health:</value>
   </data>
-  <data name="label7.ToolTip" xml:space="preserve">
-    <value>Tình trạng pin</value>
-  </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
@@ -1001,9 +815,6 @@
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Current percent:</value>
-  </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value>Mức pin hiện tại</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -1038,9 +849,6 @@
   <data name="label9.Text" xml:space="preserve">
     <value>Power status:</value>
   </data>
-  <data name="label9.ToolTip" xml:space="preserve">
-    <value>Trạng thái nguồn điện</value>
-  </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
@@ -1073,9 +881,6 @@
   </data>
   <data name="label0.Text" xml:space="preserve">
     <value>Estimated time remaining:</value>
-  </data>
-  <data name="label0.ToolTip" xml:space="preserve">
-    <value>Thời gian dùng pin còn lại</value>
   </data>
   <data name="&gt;&gt;label0.Name" xml:space="preserve">
     <value>label0</value>
@@ -1110,9 +915,6 @@
   <data name="label11.Text" xml:space="preserve">
     <value>Designed Capacity:</value>
   </data>
-  <data name="label11.ToolTip" xml:space="preserve">
-    <value>Dung lượng pin công bố</value>
-  </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
   </data>
@@ -1146,9 +948,6 @@
   <data name="label12.Text" xml:space="preserve">
     <value>Wear level:</value>
   </data>
-  <data name="label12.ToolTip" xml:space="preserve">
-    <value>Mức độ chai pin</value>
-  </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
@@ -1160,6 +959,33 @@
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="BatteryInformation_Group.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="BatteryInformation_Group.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 46</value>
+  </data>
+  <data name="BatteryInformation_Group.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 207</value>
+  </data>
+  <data name="BatteryInformation_Group.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="BatteryInformation_Group.Text" xml:space="preserve">
+    <value>Battery</value>
+  </data>
+  <data name="&gt;&gt;BatteryInformation_Group.Name" xml:space="preserve">
+    <value>BatteryInformation_Group</value>
+  </data>
+  <data name="&gt;&gt;BatteryInformation_Group.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BatteryInformation_Group.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BatteryInformation_Group.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="DisplayInformation_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1217,9 +1043,6 @@
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>HDR for playback:</value>
-  </data>
-  <data name="label14.ToolTip" xml:space="preserve">
-    <value>Tính năng HDR</value>
   </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
@@ -1419,9 +1242,6 @@
   <data name="label18.Text" xml:space="preserve">
     <value>Night light:</value>
   </data>
-  <data name="label18.ToolTip" xml:space="preserve">
-    <value>Chức năng Ánh sáng đêm</value>
-  </data>
   <data name="&gt;&gt;label18.Name" xml:space="preserve">
     <value>label18</value>
   </data>
@@ -1454,9 +1274,6 @@
   </data>
   <data name="label19.Text" xml:space="preserve">
     <value>Scale:</value>
-  </data>
-  <data name="label19.ToolTip" xml:space="preserve">
-    <value>Độ phóng to</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
@@ -1491,9 +1308,6 @@
   <data name="label20.Text" xml:space="preserve">
     <value>Brightness level:</value>
   </data>
-  <data name="label20.ToolTip" xml:space="preserve">
-    <value>Độ sáng</value>
-  </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>
   </data>
@@ -1526,9 +1340,6 @@
   </data>
   <data name="label21.Text" xml:space="preserve">
     <value>Refresh rate</value>
-  </data>
-  <data name="label21.ToolTip" xml:space="preserve">
-    <value>Tần số quét</value>
   </data>
   <data name="&gt;&gt;label21.Name" xml:space="preserve">
     <value>label21</value>
@@ -1563,9 +1374,6 @@
   <data name="label22.Text" xml:space="preserve">
     <value>Resolution:</value>
   </data>
-  <data name="label22.ToolTip" xml:space="preserve">
-    <value>Độ phân giải</value>
-  </data>
   <data name="&gt;&gt;label22.Name" xml:space="preserve">
     <value>label22</value>
   </data>
@@ -1593,9 +1401,6 @@
   <data name="DisplayInformation_Group.Text" xml:space="preserve">
     <value>Display</value>
   </data>
-  <data name="DisplayInformation_Group.ToolTip" xml:space="preserve">
-    <value>Màn hình</value>
-  </data>
   <data name="&gt;&gt;DisplayInformation_Group.Name" xml:space="preserve">
     <value>DisplayInformation_Group</value>
   </data>
@@ -1615,7 +1420,7 @@
     <value>Segoe UI, 14.25pt, style=Bold</value>
   </data>
   <data name="GithubButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 516</value>
+    <value>451, 516</value>
   </data>
   <data name="GithubButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1644,17 +1449,62 @@
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="&gt;&gt;CheckUpdateButton.Name" xml:space="preserve">
-    <value>CheckUpdateButton</value>
+  <data name="InstallTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="&gt;&gt;CheckUpdateButton.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2GradientButton, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="InstallTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;CheckUpdateButton.Parent" xml:space="preserve">
+  <data name="InstallTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="InstallTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="InstallTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 167</value>
+  </data>
+  <data name="InstallTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="InstallTime.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="InstallTime.Text" xml:space="preserve">
+    <value>Cannot identify</value>
+  </data>
+  <data name="&gt;&gt;InstallTime.Name" xml:space="preserve">
+    <value>InstallTime</value>
+  </data>
+  <data name="&gt;&gt;InstallTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InstallTime.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;CheckUpdateButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;InstallTime.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Architechture.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Architechture.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Architechture.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Architechture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 94</value>
+  </data>
+  <data name="Architechture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="Architechture.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="Architechture.Text" xml:space="preserve">
+    <value>Cannot identify</value>
   </data>
   <data name="&gt;&gt;Architechture.Name" xml:space="preserve">
     <value>Architechture</value>
@@ -1668,6 +1518,27 @@
   <data name="&gt;&gt;Architechture.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="label16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 94</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Architecture:</value>
+  </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
   </data>
@@ -1679,6 +1550,27 @@
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="Activation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Activation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Activation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Activation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 142</value>
+  </data>
+  <data name="Activation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="Activation.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="Activation.Text" xml:space="preserve">
+    <value>Cannot identify</value>
   </data>
   <data name="&gt;&gt;Activation.Name" xml:space="preserve">
     <value>Activation</value>
@@ -1692,6 +1584,27 @@
   <data name="&gt;&gt;Activation.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="DefenderStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="DefenderStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DefenderStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="DefenderStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 118</value>
+  </data>
+  <data name="DefenderStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="DefenderStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="DefenderStatus.Text" xml:space="preserve">
+    <value>Cannot identify</value>
+  </data>
   <data name="&gt;&gt;DefenderStatus.Name" xml:space="preserve">
     <value>DefenderStatus</value>
   </data>
@@ -1703,6 +1616,27 @@
   </data>
   <data name="&gt;&gt;DefenderStatus.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="label13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 142</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Activation:</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
@@ -1716,6 +1650,27 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="WindowsVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="WindowsVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="WindowsVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="WindowsVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 70</value>
+  </data>
+  <data name="WindowsVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="WindowsVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="WindowsVersion.Text" xml:space="preserve">
+    <value>Cannot identify</value>
+  </data>
   <data name="&gt;&gt;WindowsVersion.Name" xml:space="preserve">
     <value>WindowsVersion</value>
   </data>
@@ -1727,6 +1682,27 @@
   </data>
   <data name="&gt;&gt;WindowsVersion.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="ComputerName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ComputerName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ComputerName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="ComputerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 47</value>
+  </data>
+  <data name="ComputerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="ComputerName.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="ComputerName.Text" xml:space="preserve">
+    <value>Cannot identify</value>
   </data>
   <data name="&gt;&gt;ComputerName.Name" xml:space="preserve">
     <value>ComputerName</value>
@@ -1740,6 +1716,27 @@
   <data name="&gt;&gt;ComputerName.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="label23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 118</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Defender:</value>
+  </data>
   <data name="&gt;&gt;label23.Name" xml:space="preserve">
     <value>label23</value>
   </data>
@@ -1751,6 +1748,27 @@
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="label24.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 167</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Install time:</value>
   </data>
   <data name="&gt;&gt;label24.Name" xml:space="preserve">
     <value>label24</value>
@@ -1764,6 +1782,27 @@
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="label25.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 70</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
   <data name="&gt;&gt;label25.Name" xml:space="preserve">
     <value>label25</value>
   </data>
@@ -1775,6 +1814,27 @@
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="label26.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 47</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Computer name:</value>
   </data>
   <data name="&gt;&gt;label26.Name" xml:space="preserve">
     <value>label26</value>
@@ -1814,423 +1874,6 @@
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="CheckUpdateButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="CheckUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="CheckUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 164</value>
-  </data>
-  <data name="CheckUpdateButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="CheckUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 25</value>
-  </data>
-  <data name="CheckUpdateButton.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="CheckUpdateButton.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="&gt;&gt;CheckUpdateButton.Name" xml:space="preserve">
-    <value>CheckUpdateButton</value>
-  </data>
-  <data name="&gt;&gt;CheckUpdateButton.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2GradientButton, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;CheckUpdateButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;CheckUpdateButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Architechture.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="Architechture.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Architechture.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="Architechture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 94</value>
-  </data>
-  <data name="Architechture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 13</value>
-  </data>
-  <data name="Architechture.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="Architechture.Text" xml:space="preserve">
-    <value>Cannot identify</value>
-  </data>
-  <data name="&gt;&gt;Architechture.Name" xml:space="preserve">
-    <value>Architechture</value>
-  </data>
-  <data name="&gt;&gt;Architechture.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Architechture.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Architechture.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 94</value>
-  </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 13</value>
-  </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>Architecture:</value>
-  </data>
-  <data name="label16.ToolTip" xml:space="preserve">
-    <value>Kiến trúc</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Activation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="Activation.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Activation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="Activation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 142</value>
-  </data>
-  <data name="Activation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 13</value>
-  </data>
-  <data name="Activation.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="Activation.Text" xml:space="preserve">
-    <value>Cannot identify</value>
-  </data>
-  <data name="Activation.ToolTip" xml:space="preserve">
-    <value>Open Activation setting</value>
-  </data>
-  <data name="&gt;&gt;Activation.Name" xml:space="preserve">
-    <value>Activation</value>
-  </data>
-  <data name="&gt;&gt;Activation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Activation.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Activation.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="DefenderStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="DefenderStatus.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="DefenderStatus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="DefenderStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 118</value>
-  </data>
-  <data name="DefenderStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 13</value>
-  </data>
-  <data name="DefenderStatus.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="DefenderStatus.Text" xml:space="preserve">
-    <value>Cannot identify</value>
-  </data>
-  <data name="&gt;&gt;DefenderStatus.Name" xml:space="preserve">
-    <value>DefenderStatus</value>
-  </data>
-  <data name="&gt;&gt;DefenderStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DefenderStatus.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;DefenderStatus.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 142</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Activation:</value>
-  </data>
-  <data name="label13.ToolTip" xml:space="preserve">
-    <value>Trạng thái kích hoạt bản quyền</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="WindowsVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="WindowsVersion.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="WindowsVersion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="WindowsVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 70</value>
-  </data>
-  <data name="WindowsVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 13</value>
-  </data>
-  <data name="WindowsVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="WindowsVersion.Text" xml:space="preserve">
-    <value>Cannot identify</value>
-  </data>
-  <data name="&gt;&gt;WindowsVersion.Name" xml:space="preserve">
-    <value>WindowsVersion</value>
-  </data>
-  <data name="&gt;&gt;WindowsVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WindowsVersion.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;WindowsVersion.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="ComputerName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="ComputerName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ComputerName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="ComputerName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 47</value>
-  </data>
-  <data name="ComputerName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 13</value>
-  </data>
-  <data name="ComputerName.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="ComputerName.Text" xml:space="preserve">
-    <value>Cannot identify</value>
-  </data>
-  <data name="&gt;&gt;ComputerName.Name" xml:space="preserve">
-    <value>ComputerName</value>
-  </data>
-  <data name="&gt;&gt;ComputerName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ComputerName.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;ComputerName.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 118</value>
-  </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
-  </data>
-  <data name="label23.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>Defender:</value>
-  </data>
-  <data name="label23.ToolTip" xml:space="preserve">
-    <value>Trạng thái của Defender</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label24.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 167</value>
-  </data>
-  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
-  </data>
-  <data name="label24.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Update:</value>
-  </data>
-  <data name="label24.ToolTip" xml:space="preserve">
-    <value>Kiểm tra cập nhật</value>
-  </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label25.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 70</value>
-  </data>
-  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
-  </data>
-  <data name="label25.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label25.Text" xml:space="preserve">
-    <value>Version:</value>
-  </data>
-  <data name="label25.ToolTip" xml:space="preserve">
-    <value>Phiên bản</value>
-  </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
-  </data>
-  <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label26.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 47</value>
-  </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 13</value>
-  </data>
-  <data name="label26.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label26.Text" xml:space="preserve">
-    <value>Computer name:</value>
-  </data>
-  <data name="label26.ToolTip" xml:space="preserve">
-    <value>Tên máy tính</value>
-  </data>
-  <data name="&gt;&gt;label26.Name" xml:space="preserve">
-    <value>label26</value>
-  </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>11</value>
   </data>
   <data name="RefreshInformation_Button.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -2301,6 +1944,18 @@
   <data name="&gt;&gt;tittle.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="ExitButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ExitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>820, 0</value>
+  </data>
+  <data name="ExitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="ExitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
   <data name="&gt;&gt;ExitButton.Name" xml:space="preserve">
     <value>ExitButton</value>
   </data>
@@ -2337,30 +1992,6 @@
   <data name="&gt;&gt;Banner.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ExitButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="ExitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>820, 0</value>
-  </data>
-  <data name="ExitButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
-  </data>
-  <data name="ExitButton.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.Name" xml:space="preserve">
-    <value>ExitButton</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ImageButton, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.Parent" xml:space="preserve">
-    <value>Banner</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="ElipseForm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>107, 17</value>
   </metadata>
@@ -2378,12 +2009,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>WinInfor - Check all important information of your Windows system</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
-    <value>toolTip</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ElipseForm.Name" xml:space="preserve">
     <value>ElipseForm</value>
@@ -2408,6 +2033,12 @@
   </data>
   <data name="&gt;&gt;DragControl_Tittle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2DragControl, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainUI</value>

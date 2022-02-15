@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,7 +53,6 @@ namespace WinInfor
             this.RAM.Text = systemInfor.RAM;
             this.HardDiscSpace.Text = systemInfor.HardDiscSpace;
 
-            //this.DesignedCapacity.Text = batteryInfor.DesignedCapacity;
             this.WearLevel.Text = batteryInfor.WearLevel;
             this.BatteryLifeRemaining.Text = batteryInfor.BatteryLifeRemaining;
             this.PowerStatus.Text = batteryInfor.PowerStatus;
@@ -68,9 +68,11 @@ namespace WinInfor
 
             this.ComputerName.Text = windowsInfor.ComputerName;
             this.WindowsVersion.Text = windowsInfor.Version;
-            this.Architechture.Text = windowsInfor.Architechture;
+            this.Architechture.Text = windowsInfor.WindowsArchitechture;
             this.Activation.Text = windowsInfor.Activation;
+            this.InstallTime.Text = windowsInfor.InstallTime;
             this.DefenderStatus.Text = windowsInfor.Defender;
+
         }
         private void ReLoadDataFrom(BatteryInfor batteryInfor, DisplayInfor displayInfor, WindowsInfor windowsInfor)
         {
@@ -104,7 +106,7 @@ namespace WinInfor
 
                     if (latestVersion != appVersion)
                     {
-                        DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?\nUpdate Content: " + latestVersion, "Update Notification", MessageBoxButtons.YesNo);
+                        DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?\n  Update Content: \n" + latestVersion, "Update Notification", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
                             Process.Start("https://github.com/phanxuanquang/WinInfor/releases/latest");
@@ -141,5 +143,36 @@ namespace WinInfor
             Application.Exit(); 
         }
         #endregion
+
+        #region Gooogle Search
+        void openGoogleSearch(string keyWord, string filter)
+        {
+            if (keyWord != "Cannot identify")
+            {
+                Process.Start(String.Format("http://www.google.com/search?q=\"{0}\" {1}", keyWord, filter));
+            }
+        }
+
+        private void SystemModel_Click(object sender, EventArgs e)
+        {
+            openGoogleSearch(SystemModel.Text, "filetype:pdf");
+        }
+
+        private void OperatingSystem_Click(object sender, EventArgs e)
+        {
+            openGoogleSearch(OperatingSystem.Text.Replace("Microsoft ", String.Empty), String.Empty);
+        }
+
+        private void GraphicCard_Click(object sender, EventArgs e)
+        {
+            openGoogleSearch(GraphicCard.Text, String.Empty);
+        }
+
+        private void CPU_Click(object sender, EventArgs e)
+        {
+            openGoogleSearch(CPU.Text, String.Empty);
+        }
+        #endregion
+
     }
 }

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Management;
 using System.Runtime.InteropServices;
@@ -13,14 +15,15 @@ namespace WinInfor
     using SLID = Guid;
     internal class WindowsInfor
     {
-        public string ComputerName, Version, Architechture, Activation, Defender;
+        public string ComputerName, Version, WindowsArchitechture, Activation, Defender, InstallTime;       
         public WindowsInfor()
         {
             ComputerName = Environment.MachineName.ToString();
             Version = Environment.OSVersion.Version.ToString();
-            Architechture = Environment.Is64BitOperatingSystem ? "64 bit" : "32 bit";
+            WindowsArchitechture = RuntimeInformation.OSArchitecture.ToString().ToUpper();
             Activation = get_Activation();
             Defender = get_DefenderStatus();
+            InstallTime = get_InstallTime();
         }
 
         public enum SL_GENUINE_STATE
@@ -87,6 +90,29 @@ namespace WinInfor
             catch (Exception ex)
             {
                 MessageBox.Show("Cannot identify Windows Defender status.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return "Cannot identify";
+        }
+        private string get_InstallTime()
+        {
+            try
+            {
+                var key = Microsoft.Win32.RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
+
+                key = key.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion", false);
+                if (key != null)
+                {
+                    DateTime startDate = new DateTime(1970, 1, 1, 0, 0, 0);
+                    object objValue = key.GetValue("InstallDate");
+                    string stringValue = objValue.ToString();
+                    Int64 regVal = Convert.ToInt64(stringValue);
+
+                    return startDate.AddSeconds(regVal).ToString("HH:mm  on dd/MM/yyyy");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Windows installed time unknown.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return "Cannot identify";
         }

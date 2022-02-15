@@ -1,1 +1,3 @@
-Version: 1.1.1.1.0 - Add some Vietnamese tooltips, fix stable bugs and optimize startup time.
+- Replace "Update" button with "Windows Install Time", modify "Windows Architechture" with more accurancy. 
+- Add free space available for RAM and Hard Drive.
+- Add Google search for "System" group box properties when clicked.
