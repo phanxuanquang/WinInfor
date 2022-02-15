@@ -106,7 +106,7 @@ namespace WinInfor
 
                     if (latestVersion != appVersion)
                     {
-                        DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?\n  Update Content: \n" + latestVersion, "Update Notification", MessageBoxButtons.YesNo);
+                        DialogResult dialogResult = MessageBox.Show("A new version has been released. Do you want to download it now?\nThis update package includes: \n" + latestVersion, "Update Notification", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
                             Process.Start("https://github.com/phanxuanquang/WinInfor/releases/latest");
