@@ -6,6 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Management;
 using System.Runtime.InteropServices;
+using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -66,26 +67,30 @@ namespace WinInfor
             }
             return "Cannot identify";
         }
-
         string get_DefenderStatus()
         {
             try
             {
-                Process p = new Process();
-                p.StartInfo.UseShellExecute = false;
-                p.StartInfo.RedirectStandardOutput = true;
-                p.StartInfo.FileName = "CMD.exe";
-                p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                p.StartInfo.CreateNoWindow = true;
-                p.StartInfo.Arguments = "/C PowerShell \"Get-MpComputerStatus | select AntispywareEnabled, AntivirusEnabled, IoavProtectionEnabled, RealTimeProtectionEnabled, IsTamperProtected\"";
-                p.Start();
-                string result = p.StandardOutput.ReadToEnd();
-                string resultFinal = result.Replace("True", "");
-                if (result.Length - resultFinal.Length == 20)
+                bool isDefenderServicesRunning(string[] servicesList)
+                {
+                    ServiceController sc;
+                    foreach (string service in servicesList)
+                    {
+                        sc = new ServiceController(service);
+                        if (sc != null && sc.Status != ServiceControllerStatus.Running)
+                        {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+
+                string[] sercives = { "WdNisSvc", "WinDefend", "mpssvc" };
+                if (isDefenderServicesRunning(sercives))
                 {
                     return "On";
                 }
-                return "Off";
+                return "Some services are not running";
             }
             catch (Exception ex)
             {

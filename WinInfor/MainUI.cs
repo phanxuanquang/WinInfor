@@ -122,14 +122,6 @@ namespace WinInfor
         }
 
         #region Button Events
-        private void CheckUpdateButton_Click(object sender, EventArgs e)
-        {
-            Program.runCommand_Advanced("explorer ms-settings:windowsupdate");
-        }
-        private void Activation_Click(object sender, EventArgs e)
-        {
-            Program.runCommand_Advanced("explorer ms-settings:activation");
-        }
         private void RefreshInformation_Button_Click(object sender, EventArgs e)
         {
             ReLoadDataFrom(new BatteryInfor(), new DisplayInfor(this.DesignedCapacity.Text), new WindowsInfor());

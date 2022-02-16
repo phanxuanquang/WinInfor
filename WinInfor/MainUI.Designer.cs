@@ -413,7 +413,6 @@
             resources.ApplyResources(this.Activation, "Activation");
             this.Activation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Activation.Name = "Activation";
-            this.Activation.Click += new System.EventHandler(this.Activation_Click);
             // 
             // DefenderStatus
             // 
