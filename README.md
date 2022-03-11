@@ -8,6 +8,7 @@ This application can check these information: (Keep updating)
   <summary>System</summary>
   
 - *Model name*
+- *Device manufacture*
 - *Operating system full name*
 - *CPU basic information*
 - *Graphic card full name*
