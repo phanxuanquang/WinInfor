@@ -16,12 +16,28 @@ namespace WinInfor
         public string SystemModel, OperatingSystem, CPU, GraphicCard, RAM, HardDiscSpace;
         public SystemInfor()
         {
-            SystemModel = get_SystemModel();
+            SystemModel = String.Format("{0} by {1}", get_SystemModel(), get_Manufacturer());
             CPU = get_CPU();
             OperatingSystem = get_OperatingSystem();
             GraphicCard = get_GraphicCard();
             RAM = get_RAM();
             HardDiscSpace = get_HardDiskSpace();
+        }
+        public static string get_Manufacturer()
+        {
+            try
+            {
+                ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT Manufacturer FROM Win32_ComputerSystem");
+                foreach (ManagementObject mo in mos.Get())
+                {
+                    return mo["manufacturer"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("System model not found.\nError: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return "Cannot identify";
         }
         string get_SystemModel()
         {

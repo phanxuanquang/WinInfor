@@ -102,7 +102,7 @@ namespace WinInfor
         {
             try
             {
-                var key = Microsoft.Win32.RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
+                var key = RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, Environment.MachineName, RegistryView.Registry64);
 
                 key = key.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion", false);
                 if (key != null)
@@ -121,5 +121,6 @@ namespace WinInfor
             }
             return "Cannot identify";
         }
+        
     }
 }
